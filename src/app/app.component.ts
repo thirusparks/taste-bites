@@ -6,19 +6,12 @@ import  { TryService }  from  './service/try.service'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  heading = ''; 
+export class AppComponent { 
   pageTitle = '';
-  mess : any;
+  
   constructor(private service : TryService){
      this.pageTitle = this.service.title;
   }
 
-  getMessage(){
-    this.mess = this.service.getData();
-    console.log(this.mess , "message");
-    
-    return this.mess;
-  }
   
 }
