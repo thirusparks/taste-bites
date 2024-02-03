@@ -19,4 +19,7 @@ export class DataBindingComponent implements OnInit {
     this.isActive = true;
   }
 
+  getServerName(event){
+    this.serverName = event.target.value;
+  }
 }
